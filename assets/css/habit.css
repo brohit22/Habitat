@@ -1,0 +1,135 @@
+.habit-name {
+  display: block;
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.key {
+  display: inline-flex;
+}
+
+#item-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  padding: 0;
+}
+
+#item-list li {
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+  margin: 7px 0;
+}
+
+#weekly-view__btn,
+#weekly-view__btn-2 {
+  padding: 5px 7px;
+  margin-right: 3px;
+  background-color: #f44336;
+  color: #fff;
+  border: 1.5px solid #222;
+  font-size: 15px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+#weekly-view__btn:hover,
+#weekly-view__btn-2:hover {
+  background-color: #ff1100;
+}
+
+#weekly-view__btn-2 {
+  border-radius: 15px 0 0 15px;
+}
+
+.habit-list {
+  display: flex;
+  overflow-x: scroll;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px;
+}
+
+.habit-list::-webkit-scrollbar {
+  display: none;
+}
+
+.habit-list-item {
+  background-color: #f5f5f5;
+  width: 650px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.habit-list-item-name {
+  color: whitesmoke;
+}
+
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: initial;
+}
+
+.weekly__container {
+  position: relative;
+  z-index: 1;
+  width: 650px;
+  height: 300px;
+  border: 3px solid whitesmoke;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.weekly__date {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  background-color: rgba(34, 166, 153, 0.8);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.weekly__date p {
+  font-size: 12px;
+  position: relative;
+  color: whitesmoke;
+  top: -10px;
+}
+
+.with-weekly {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

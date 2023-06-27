@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(242, 190, 34, 1) 35%,
+    rgba(242, 151, 39, 1) 60%
+  );
+  color: #b31312;
+  font-family: "Sriracha", sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+main div {
+  width: 35rem;
+  justify-content: center;
+  display: grid;
+}
+
+.fas {
+  color: #fff;
+  font-size: x-large;
+  margin: 5px;
+  position: fixed;
+}
+
+.heading {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid #fff;
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 2rem;
+}
+
+/* Navigation  */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+nav a:hover {
+  color: #e5e5e5;
+}
