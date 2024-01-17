@@ -1,14 +1,14 @@
-const express = require("express");
-const router = express.Router();
+import express from 'express';
+import { habitController } from '../controller/home_controller.js';
 
-const habitController = require("../controller/home_controller");
+const user = express.Router();
 
 // For rendering different pages and controllers
-router.get("/", habitController.load);
-router.post("/add-habit", habitController.add);
-router.get("/delete-habit", habitController.delete);
-router.get("/view-habit", habitController.viewhabit);
-router.get("/find-habit", habitController.fetchhabit);
-router.get("/update-db-date", habitController.updateDates);
+user.get('/', habitController.load);
+user.post('/add-habit', habitController.add);
+user.get('/delete-habit', habitController.delete);
+user.get('/view-habit', habitController.viewhabit);
+user.get('/find-habit', habitController.fetchhabit);
+user.get('/update-db-date', habitController.updateDates);
 
-module.exports = router;
+export default user;

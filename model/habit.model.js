@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose, { Schema } from 'mongoose';
 
 // Schema for habit
 const habitSchema = new mongoose.Schema(
@@ -27,6 +27,4 @@ const habitSchema = new mongoose.Schema(
 );
 
 // creating a model for habit schema
-const Habit = mongoose.model("Habit", habitSchema);
-
-module.exports = Habit;
+export const Habit = mongoose.model('Habit', habitSchema);
